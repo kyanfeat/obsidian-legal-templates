@@ -1,0 +1,43 @@
+{
+  "id": "legal-templates",
+  "name": "Legal Templates",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Professional legal document templates for contracts, memos, and client intake forms with attorney-client privilege protection.",
+  "author": "Feat365 Legal Tech",
+  "authorUrl": "https://github.com/feat365",
+  "isDesktopOnly": false,
+  "feat365": true,
+  "legal": {
+    "compliance": [
+      "attorney-client-privilege",
+      "confidentiality-protection",
+      "bar-association-guidelines"
+    ],
+    "disclaimers": [
+      "This plugin provides templates for informational purposes only and does not constitute legal advice.",
+      "Users must ensure compliance with local bar association rules and regulations.",
+      "Attorney-client privilege applies to documents created using these templates."
+    ],
+    "jurisdiction": [
+      "US-Federal",
+      "US-California", 
+      "US-New-York",
+      "US-Texas",
+      "US-Florida",
+      "UK",
+      "Canada"
+    ],
+    "dataHandling": {
+      "clientData": "stored-locally-encrypted",
+      "privilegedCommunications": "protected",
+      "conflictChecking": "manual-required"
+    }
+  },
+  "security": {
+    "dataEncryption": true,
+    "externalConnections": false,
+    "fileSystemAccess": "vault-only",
+    "networkRequests": false
+  }
+}

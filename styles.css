@@ -1,0 +1,148 @@
+/* Legal Templates Plugin Styles */
+
+/* Template document styling */
+.legal-template {
+  font-family: 'Times New Roman', serif;
+  line-height: 1.6;
+  color: #2c3e50;
+}
+
+.legal-template h1 {
+  border-bottom: 2px solid #34495e;
+  padding-bottom: 10px;
+  color: #2c3e50;
+}
+
+.legal-template h2 {
+  color: #34495e;
+  margin-top: 25px;
+}
+
+.legal-template h3 {
+  color: #5d6d7e;
+}
+
+/* Legal disclaimers and notices */
+.legal-disclaimer {
+  background-color: #fef9e7;
+  border-left: 4px solid #f1c40f;
+  padding: 12px;
+  margin: 20px 0;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.privilege-notice {
+  background-color: #eaf2f8;
+  border-left: 4px solid #3498db;
+  padding: 12px;
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+/* Contract-specific styling */
+.contract-parties {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+
+.signature-block {
+  margin-top: 40px;
+  padding: 20px 0;
+  border-top: 1px solid #bdc3c7;
+}
+
+/* Form elements */
+.legal-form input[type="text"],
+.legal-form input[type="email"],
+.legal-form input[type="tel"],
+.legal-form textarea {
+  border: none;
+  border-bottom: 1px solid #34495e;
+  background: transparent;
+  padding: 5px 0;
+  margin: 0 5px;
+  font-family: inherit;
+}
+
+.legal-form input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Settings tab styling */
+.legal-templates-settings .setting-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #e1e5e9;
+}
+
+.legal-templates-settings .setting-item-name {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.legal-templates-settings .setting-item-description {
+  color: #7f8c8d;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+/* Ribbon icon styling */
+.legal-templates-ribbon {
+  color: #2c3e50;
+}
+
+.legal-templates-ribbon:hover {
+  color: #34495e;
+}
+
+/* Status indicators */
+.confidential-mark {
+  color: #e74c3c;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+}
+
+.privilege-mark {
+  color: #3498db;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .legal-template {
+    font-size: 14px;
+  }
+  
+  .signature-block {
+    padding: 15px 0;
+  }
+}
+
+/* Print styles */
+@media print {
+  .legal-template {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+  
+  .legal-disclaimer,
+  .privilege-notice {
+    border: 1px solid #333;
+    background: white !important;
+  }
+  
+  /* Ensure page breaks don't split important sections */
+  .signature-block,
+  .contract-parties {
+    page-break-inside: avoid;
+  }
+}
